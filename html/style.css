@@ -1,0 +1,248 @@
+* {
+  margin: 0;
+  padding: 0;
+  /* overflow: hidden; */
+}
+
+body {
+  overflow: hidden;
+  font-family: 'Montserrat', sans-serif;
+  color:#fff;
+  font-weight: 700;
+}
+
+
+.arribademinimapa {
+  position: absolute;
+  bottom:20vh;
+  left: 2vw;
+}
+
+
+
+.economia, .tiempohora {
+  display:flex;
+  font-size: .80vw;
+  text-align: left;
+  font-weight: 700;
+  text-shadow: 0px 1px 0px rgba(0, 0, 0, 0.5);
+}
+.horajs, .fechajs {
+  padding: 0 0 0 0.5vh;
+  color: #fff;
+  text-shadow: 0px 1px 0px rgba(0, 0, 0, 0.5);
+}
+.hora, .tiempo {
+width: 4vw;
+}
+
+.efectivo {
+  color:#68D391;
+  padding: 0 0 0 0.5vh;
+}
+.banco {
+  color:#ffffff;
+  padding: 0 0 0 0.5vh;
+}
+
+.elnombre,
+.laid {
+  padding: 0 0 0 0.5vh;
+}
+
+
+.logo {
+  display: flex;
+  justify-content: center;
+}
+.logo img {
+  max-width: 5vw;
+  margin-top: 0.5vw;
+}
+
+.mugshot {
+  max-width: 35px;
+  max-height: 35px;
+}
+.trabajo {
+  display:flex;
+  justify-content: flex-end;
+  align-items: center;
+  position: absolute;
+  top: 3vh;
+  right: 2vw;
+}
+
+.eltrabajo {
+  font-style: italic;
+  padding: 0.32vw;
+  border-radius: 0.2vw;
+  color: #fff;
+  font-weight: 900;
+  text-align: right;
+  text-transform: uppercase;
+  font-size: 1.21vw;
+  border-radius: 0.3vw;
+}
+
+.dataplayer {
+  display:flex;
+  align-items: center;
+}
+
+
+.circulo {
+  display: flex;
+  width: 2.25vw;
+  height: 2.25vw;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  margin-right: .5vw;
+  border: .15vw solid;
+}
+
+
+.circulo i {
+  font-size: 1.25vw;
+}
+
+
+.bebida i {
+  background: -webkit-linear-gradient(90deg, #4299E1 0%, #4299E1 50%, rgba(255, 255, 255, 1) 50%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.comida i {
+  background: -webkit-linear-gradient(90deg, #ECC94B 0%, #ECC94B 50%, rgba(255, 255, 255, 1) 50%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+
+.comida {
+  border-color: #ECC94B;
+}
+
+.bebida {
+  border-color: #4299E1;
+}
+
+
+.mugshot {
+  border-radius: 50%;
+  height: 2.6vw;
+}
+
+
+
+.todoelhudcar {
+  position: absolute;
+  bottom: 1vh;
+  right: 2vw;
+}
+.autitohud {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  transition: 1s;
+}
+
+.cinturon {
+  animation: pulso 1s infinite;
+  padding:0px;
+  margin:0px;
+  border-radius: .4vw;
+}
+
+.numspeed, .textmotor, .gasolina {
+  width: 7vw;
+}
+.textos p {
+  margin: auto;
+  padding: 0px;
+  text-align: center;
+}
+
+.numspeed span, .textmotor span, .gasolina span, .cinturon span {
+  font-size: 1vw;
+  font-weight: 900;
+  color: #ffffff;
+  text-transform: uppercase;
+  text-shadow: 0 0 2px #252525;
+  font-style: italic;
+}
+.textmotor p, .gasolina p, .cinturon p {
+  font-size: 1.4vw;
+  line-height: 1.2vw;
+  font-weight: 900;
+  color: #ffffff;
+  text-shadow: 0 0 2px #252525;
+}
+.numspeed p {
+  font-size: 1.4vw;
+  line-height: 1.2vw;
+  font-weight: 900;
+  color: #fafe22;
+  text-shadow: 0 0 2px #252525;
+}
+
+
+.voiceDistance {
+  opacity:.21;
+}
+.active {
+  opacity:1;
+  border-radius: 50%;
+  animation: talking 1s infinite;
+}
+
+
+.Whisper {
+  color:#ffd000;
+}
+.Normal {
+  color:#ffffff;
+}
+.Shouting {
+  color:#ff1e00;
+}
+
+
+
+
+@keyframes pulso {
+	0% {
+		transform: scale(1);
+		/* box-shadow: 0 0 0 0 rgba(255, 0, 0, 0.3); */
+	}
+
+	50% {
+		transform: scale(1.2);
+		box-shadow: 0 0 0 10px rgba(119, 0, 0, 0);
+	}
+
+	100% {
+		transform: scale(1);
+		box-shadow: 0 0 0 0 rgba(119, 0, 0, 0);
+	}
+}
+
+@keyframes talking {
+	0% {
+		transform: scale(1);
+		box-shadow: 0 0 0 0 rgba(60, 255, 0, 0.3);
+	}
+
+	70% {
+		transform: scale(1);
+		box-shadow: 0 0 0 10px rgba(119, 0, 0, 0);
+	}
+
+	100% {
+		transform: scale(1);
+		box-shadow: 0 0 0 0 rgba(119, 0, 0, 0);
+	}
+}

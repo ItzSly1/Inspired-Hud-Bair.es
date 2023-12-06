@@ -1,0 +1,109 @@
+<html>
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="style.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+	<script src="https://kit.fontawesome.com/8345449064.js" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/howler/2.1.1/howler.min.js"ºº type="text/javascript"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+	<script src="https://code.jquery.com/ui/1.13.1/jquery-ui.js"></script> 
+
+    <script src="app.js"></script>
+	
+
+
+
+</head>
+	<body>
+
+		<div class="todoelHUd">
+
+			<div class="trabajo">
+
+                <div class="circulo comida">
+                    <i class="fas fa-utensils"></i>
+                </div>
+                <div class="circulo bebida">
+                    <i class="fas fa-tint"></i>
+                </div>
+				<div class="eltrabajo">
+					<span class="job">Cargando...</span>
+				</div>
+			</div>
+
+			<div class="arribademinimapa">
+				<div class="dataplayer">
+					<div class="carapelado">
+						<img class="mugshot" id="microJs" src="https://media.tenor.com/On7kvXhzml4AAAAj/loading-gif.gif" onerror="javascript:imgError(this)">
+					</div>
+					<div class="identificador">
+						<span class="laid">123</span>
+					</div>
+					<div class="nombre">
+						<span class="elnombre">Cargando...</span>
+					</div>
+				</div>
+
+				<div class="tiempohora">
+					<div class="hora"><span class="horajs">Cargando...</span>
+					</div>
+					<div class="tiempo"><span class="fechajs">Cargando...</span>
+					</div>
+				</div>
+
+				<div class="economia">
+						<div class="efectivo"><span><i class="fa-solid fa-money-bill"></i></span> <span class="moneyjs">Cargando...</span></div>
+						<div class="banco"><span><i class="fa-solid fa-wallet"></i></span> <span class="bankjs">Cargando...</span></div>
+				</div>
+			</div>
+
+
+
+				<div class="status">
+				</div>
+		
+				<div class="todoelhudcar">
+					<div class="autitohud">
+						<div class="gasolina">
+							<p>373</p>
+							<span>NAFTA</span>
+						</div>
+						<div class="numspeed">
+							<p>373</p>
+							<span>KM/H</span>
+						</div>
+						<div class="textmotor">
+							<p>373</p>
+							<span>DAÑO</span>
+						</div>
+						<div class="cinturon pulso">
+							<span>cintur&oacute;n</span>
+						</div>
+					</div>
+				</div>
+
+		</div>
+		<script>
+
+			function startClockThread() {
+				setInterval(function () {
+					var time = $(".horajs");
+					var date_text = $(".fechajs");
+			
+					var date = new Date();
+					var current_time = `${date.getHours()}:${date.getMinutes()}:${date.getSeconds()}`
+					var current_date = `${date.getDate()}/${date.getMonth() + 1}/${date.getFullYear()}`
+			
+					time.text(current_time);
+					date_text.text(current_date);
+			
+				}, 1000);
+			}
+				</script>
+	</body>
+</html>
+		
